@@ -1,0 +1,29 @@
+<form class="form-signin" [formGroup]="login">
+  <img class="mb-4" src="https://img.freepik.com/free-vector/flat-design-letter-b-logo-template_23-2149355264.jpg?w=2000" alt="" width="150"
+       height="150">
+  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+  <input formControlName="email" [ngClass]="login.controls['email'].invalid ?'is-invalid': 'is-valid'"
+         type="text" class="form-control" placeholder="Email address" required autofocus>
+  <div class="invalid-feedback">
+    <div *ngIf="login.controls['email'].errors?.required && login.controls['email'].touched">
+      nhập đúng định dạng email
+    </div>
+    <div *ngIf="login.controls['email'].errors?.email && login.controls['email'].touched">
+    </div>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <input formControlName="password"  [ngClass]="login.controls['password'].invalid?'is-invalid':'is-valid'"
+         type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+  <div *ngIf="login.controls['password'].errors?.minlength && login.controls['password'].touched">
+    Please input password min length > 6.
+  </div>
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <button class="btn btn-primary " type="submit">Sign in</button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+</form>

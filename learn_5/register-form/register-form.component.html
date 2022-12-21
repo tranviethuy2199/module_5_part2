@@ -1,0 +1,99 @@
+<div class="container" style="width: 30%">
+  <h2>Đăng kí Form</h2>
+  <form [formGroup]="rfUser" (ngSubmit)="onSubmit()" autocomplete="off">
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input formControlName="email" type="text" class="form-control"
+             [ngClass]="rfUser.controls['email'].invalid
+              && rfUser.controls['email'].touched ? 'is-invalid': 'is-valid'">
+      <div class="invalid-feedback">
+        <div *ngIf="rfUser.controls['email'].hasError('required')
+         && (rfUser.controls['email'].touched)">
+          không được để trống
+        </div>
+      </div>
+      <div class="invalid-feedback">
+        <div *ngIf="rfUser.controls['email'].hasError('email')
+         && (rfUser.controls['email'].touched)">
+          nhập đúng định dạng email
+        </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Country</label>
+      <select formControlName="country" class="form-select" aria-label="Default select example"
+              [ngClass]="rfUser.controls['country'].invalid
+              && rfUser.controls['country'].touched ? 'is-invalid': 'is-valid'">
+        <option value="" selected> Country</option>
+        <option value="Việt Nam">Việt Nam</option>
+        <option value="Đức">Đức</option>
+        <option value="Nhật Bản">Nhật Bản</option>
+      </select>
+      <div class="invalid-feedback">
+        <div *ngIf="rfUser.controls['country'].hasError('required')
+        && (rfUser.controls['country'].touched)">
+         Không được để trống
+        </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Age</label>
+      <input formControlName="age" type="number" class="form-control"
+             [ngClass]="rfUser.controls['age'].invalid
+              && rfUser.controls['age'].touched ? 'is-invalid': 'is-valid'">
+      <div class="invalid-feedback">
+        <div *ngIf="rfUser.controls['age'].hasError('min')
+        && (rfUser.controls['age'].hasError('required'))
+        && (rfUser.controls['age'].touched)">
+          chưa đủ tuổi
+        </div>
+      </div>
+      <div class="invalid-feedback">
+        <div *ngIf="rfUser.controls['age'].hasError('min')
+        && (rfUser.controls['age'].touched)">
+          chưa đủ tuổi
+        </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label"></label>
+      <input formControlName="gender" [ngClass]="rfUser.controls['gender'].invalid
+             && rfUser.controls['gender'].touched ? 'is-invalid': 'is-valid'"
+             type="radio" class="form-check-input" [value]="'male'" >Nam
+      <input formControlName="gender" [ngClass]="rfUser.controls['gender'].invalid
+             && rfUser.controls['gender'].touched? 'is-invalid': 'is-valid'"
+             type="radio" class="form-check-input" [value]="'female'" >Nữ
+      <input formControlName="gender" [ngClass]="rfUser.controls['gender'].invalid
+             && rfUser.controls['gender'].touched? 'is-invalid': 'is-valid'"
+             type="radio" class="form-check-input" [value]="2" >LGBT
+    </div>
+    <div *ngIf="rfUser.controls['gender'].hasError('required')">
+      không được để trống
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Phone</label>
+      <input formControlName="phone" type="text" class="form-control"
+             [ngClass]="rfUser.controls['phone'].invalid
+             && rfUser.controls['phone'].touched ? 'is-invalid': 'is-valid'">
+      <div class="invalid-feedback">
+        <div *ngIf="rfUser.controls['phone'].hasError('pattern')">
+          Chưa đúng định dạng
+        </div>
+      </div>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Password</label>
+      <input formControlName="password" type="password" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Confirm password</label>
+      <input formControlName="confirmPassword" type="password" class="form-control"
+             [ngClass]="rfUser.errors?.reConfirmPass ? 'is-invalid' : 'is-valid'">
+    </div>
+    <div *ngIf="rfUser.errors?.reConfirmPass"  class="invalid-feedback">
+      Password not match
+    </div>
+    <button type="submit" [disabled]="rfUser.invalid" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+

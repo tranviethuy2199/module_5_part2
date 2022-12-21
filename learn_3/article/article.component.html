@@ -1,0 +1,106 @@
+<!--<h2>Today's article</h2>-->
+<!--<hr>-->
+<!--<div>-->
+<!--  <a href="{{article.url}}" target="_blank">{{article.title}}</a>-->
+<!--</div>-->
+<!--<hr>-->
+<!--<div>-->
+<!--  <h2>Article Information</h2>-->
+<!--  <table>-->
+<!--    <tr>-->
+<!--      <td>Title:</td>-->
+<!--      <td><textarea [(ngModel)]="article.title" cols="70"></textarea></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Url:</td>-->
+<!--      <td>-->
+<!--        <textarea [(ngModel)]="article.url" cols="70"></textarea>-->
+<!--      </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td></td>-->
+<!--      <td><button style="float: right" (click)="addNewArticle()">Add</button></td>-->
+<!--    </tr>-->
+<!--  </table>-->
+<!--</div>-->
+
+<!--<div *ngFor="let art of articles">-->
+<!--  <a href="{{art.url}}" target="_blank">{{art.title}}</a>-->
+<!--</div>-->
+<!--<div *ngFor="let art of articles">-->
+<!--  <a href="{{art.url}}" target="_blank">{{art.title}}</a>: <app-like></app-like>-->
+<!--</div>-->
+<!--<hr>-->
+<!--@CodeGym, 2021-->
+<figure class="text-center">
+  <blockquote class="blockquote">
+    <p>Today's article.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Someone famous in <cite title="Source Title">Source Title</cite>
+  </figcaption>
+</figure>
+<!--button 1-->
+<div style="display: flex ; justify-content: center">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Nhấp em đi
+  </button>
+</div>
+<!--modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+     style="text-align: center">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <a href="{{article.url}}" target="_blank">{{article.title}}</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--button 2-->
+<div style="display: flex ; justify-content: center ; padding-top: 20px">
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    Ở đây có link =))
+  </button>
+</div>
+<!--left modal-->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Title :
+    </div>
+    <div>
+      <textarea [(ngModel)]="article.title" cols="40"></textarea>
+    </div>
+    <div>
+      Url :
+    </div>
+    <div>
+      <textarea [(ngModel)]="article.url" cols="45" rows="3"></textarea>
+    </div>
+    <div class="dropdown mt-3">
+      <button style="float: right" (click)="addNewArticle()">Add</button>
+    </div>
+  </div>
+</div>
+
+<div *ngFor="let art of articles">
+  <div><a href="{{art.url}}" target="_blank">{{art.title}}</a>:</div>
+  <div><app-like></app-like></div>
+</div>
+<hr>
+<div class="footer"></div>
+@CodeGym, 2021

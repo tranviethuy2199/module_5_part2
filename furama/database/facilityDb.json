@@ -1,0 +1,69 @@
+{
+  "facilityType" : [
+    {
+      "id" : 1,
+      "type" : "ROOM"
+    },
+    {
+      "id" : 2,
+      "type" : "VILLA"
+    },
+    {
+      "id" : 3,
+      "type" : "HOUSE"
+    }
+  ],
+  "facility" : [
+    {
+      "id": 1,
+      "name": "OCEAN VIEW",
+      "rentType":{
+        "id" : 1,
+        "type" : "ROOM"
+      },
+      "cost":500000,
+      "peopleAmount" : 2,
+      "area":100,
+      "roomStandard": "",
+      "floors": "",
+      "description": "",
+      "poolAre": "",
+      "freeService" : "F&B service",
+      "rentTime" : "day"
+    },
+    {
+      "id": 2,
+      "name": "OCEAN VIEW",
+      "rentType":{
+        "id" : 2,
+        "type" : "VILLA"
+      },
+      "cost":500000,
+      "peopleAmount" : 2,
+      "area":100,
+      "roomStandard": "qưeqew",
+      "floors": "2",
+      "description": "qưeqwe",
+      "poolAre": 10,
+      "freeService" : "",
+      "rentTime" : "day"
+    },
+    {
+      "id": 3,
+      "name": "OCEAN VIEW",
+      "rentType":{
+        "id" : 3,
+        "type" : "HOUSE"
+      },
+      "cost":500000,
+      "peopleAmount" : 2,
+      "area":100,
+      "roomStandard": "fghfgh",
+      "floors": "3",
+      "description": "fghfgh",
+      "poolAre": "",
+      "freeService" : "",
+      "rentTime" : "day"
+    }
+  ]
+}

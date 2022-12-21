@@ -1,0 +1,155 @@
+{
+  "customerType" : [
+    {
+      "id": 1 ,
+      "type" : "Member"
+    },
+    {
+      "id": 2 ,
+      "type" : "Normal"
+    },
+    {
+      "id": 3 ,
+      "type" : "Silver"
+    },
+    {
+      "id": 4,
+      "type" : "Gold"
+    },
+    {
+      "id": 5 ,
+      "type" : "V.I.P"
+    }
+  ],
+  "customer": [
+    {
+      "id" : 1,
+      "name" : "Trần Viết Huy",
+      "birthday" : "2022-12-09",
+      "identityCard" : "123456789",
+      "phoneNumber" : "09051231233",
+      "email": "aa@gmail.com",
+      "customerType" : {
+        "id" : 5,
+        "type" : "V.I.P"
+      },
+      "address" : "Đà Nẵng"
+    },
+    {
+      "id" : 2,
+      "name" : "Jackson",
+      "birthday" : "2022-12-09",
+      "identityCard" : "123456789",
+      "phoneNumber" : "09051231233",
+      "email": "aa@gmail.com",
+      "customerType" : {
+        "id" : 4,
+        "type" : "Gold"
+      },
+      "address" : "USA"
+    },
+    {
+      "id" : 3,
+      "name" : "Nguyễn Văn A",
+      "birthday" : "2022-12-09",
+      "identityCard" : "123456789",
+      "phoneNumber" : "09051231233",
+      "email": "aa@gmail.com",
+      "customerType" : {
+        "id" : 4,
+        "type" : "Gold"
+      },
+      "address" : "England"
+    },
+    {
+      "id" : 4,
+      "name" : "Nguyễn Văn B",
+      "birthday" : "2022-12-09",
+      "identityCard" : "123456789",
+      "phoneNumber" : "09051231233",
+      "email": "aa@gmail.com",
+      "customerType" : {
+        "id" : 4,
+        "type" : "Gold"
+      },
+      "address" : "England"
+    },
+    {
+      "id" : 5,
+      "name" : "Nguyễn Văn C",
+      "birthday" : "2022-12-09",
+      "identityCard" : "123456789",
+      "phoneNumber" : "09051231233",
+      "email": "aa@gmail.com",
+      "customerType" : {
+        "id" : 4,
+        "type" : "Gold"
+      },
+      "address" : "England"
+    },
+    {
+      "id" : 6,
+      "name" : "Nguyễn Văn D",
+      "birthday" : "2022-12-09",
+      "identityCard" : "123456789",
+      "phoneNumber" : "09051231233",
+      "email": "aa@gmail.com",
+      "customerType" : {
+        "id" : 4,
+        "type" : "Gold"
+      },
+      "address" : "England"
+    },
+    {
+      "id" : 7,
+      "name" : "Nguyễn Văn E",
+      "birthday" : "2022-12-09",
+      "identityCard" : "123456789",
+      "phoneNumber" : "09051231233",
+      "email": "aa@gmail.com",
+      "customerType" : {
+        "id" : 4,
+        "type" : "Gold"
+      },
+      "address" : "England"
+    },
+    {
+      "id" : 8,
+      "name" : "Nguyễn Văn F",
+      "birthday" : "2022-12-09",
+      "identityCard" : "123456789",
+      "phoneNumber" : "09051231233",
+      "email": "aa@gmail.com",
+      "customerType" : {
+        "id" : 4,
+        "type" : "Gold"
+      },
+      "address" : "England"
+    },{
+      "id" : 9,
+      "name" : "Nguyễn Văn G",
+      "birthday" : "2022-12-09",
+      "identityCard" : "123456789",
+      "phoneNumber" : "09051231233",
+      "email": "aa@gmail.com",
+      "customerType" : {
+        "id" : 4,
+        "type" : "Gold"
+      },
+      "address" : "England"
+    },
+    {
+      "id" : 10,
+      "name" : "Nguyễn Văn H",
+      "birthday" : "2022-12-09",
+      "identityCard" : "123456789",
+      "phoneNumber" : "09051231233",
+      "email": "aa@gmail.com",
+      "customerType" : {
+        "id" : 4,
+        "type" : "Gold"
+      },
+      "address" : "England"
+    }
+  ]
+}

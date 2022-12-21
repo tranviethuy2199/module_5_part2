@@ -1,0 +1,27 @@
+<p>dictonary-page works!</p>
+<div class="container">
+  <h3 class="mt-2">Dictionary</h3>
+  <form class="w-75 mb-3 d-flex">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" #wordSearch>
+    <button class="btn btn-outline-success" type="submit"  (click)="search(wordSearch)">Search</button>
+  </form>
+  <table class="table table-striped table-hover">
+    <thead>
+    <tr class="bg-primary text-white">
+      <th>STT</th>
+      <th>English</th>
+      <th>VietName</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let word of dictonaryList; let i = index">
+      <td>{{i+1}}</td>
+      <td>
+        <a [routerLink]="['/dictionary-detail', word.word]">{{word.word}}</a>
+      </td>
+      <td>{{word.word[1]}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

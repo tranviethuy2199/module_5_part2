@@ -1,0 +1,19 @@
+<h1>Máy tính đơn giản</h1>
+<table style="margin: auto">
+  <tr>
+    <th>
+      <input type="number" [(ngModel)]="number_A"/>
+    </th>
+    <th>
+      <input type="number" [(ngModel)]="number_B"/>
+    </th>
+  </tr>
+</table><br>
+<div style="text-align: center">
+  <button (click)="calculation('+')">Addition(+)</button>
+  <button (click)="calculation('-')">Subtraction(-)</button>
+  <button (click)="calculation('*')">Multiplication</button>
+  <button (click)="calculation('/')" is>Division</button>
+</div>
+<p>{{result}}</p>
+

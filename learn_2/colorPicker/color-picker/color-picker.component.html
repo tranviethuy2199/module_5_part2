@@ -1,0 +1,10 @@
+<div [style.background]="background">
+  <h2>Color</h2>
+  <fieldset>
+    <legend><h3>Color Picker</h3></legend>
+    <div>
+      <label for="picker" style="font-weight: bold">Color Picker</label>
+      <input id="picker" [value]="background" type = "color" (change)="onChange($event.target['value'])">
+    </div>
+  </fieldset>
+</div>

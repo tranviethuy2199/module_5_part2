@@ -1,0 +1,22 @@
+<p>dictonary-detail works!</p>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>English</th>
+    <th>VietName</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngIf="word; else nodata">
+    <td>{{word.word}}</td>
+    <td *ngIf="word.mean.length > 0; else nodata">
+      <span *ngFor="let vietnamWord of word.mean">{{vietnamWord}} |</span>
+    </td>
+  </tr>
+  <ng-template #nodata>
+    <td colspan="2">
+      <span class="text-danger">... no data</span>
+    </td>
+  </ng-template>
+  </tbody>
+</table>

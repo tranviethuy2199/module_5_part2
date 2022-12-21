@@ -1,0 +1,160 @@
+<!--nav-->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/furama/home']">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/customer/list']">Customer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/employee/list']">Employee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/facility/list']">Facility</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " [routerLink]="['/contract/create']">CREATE</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" role="search" method="get">
+        <input class="form-control me-2" aria-label="Search" type="text"
+               placeholder="Search name"
+               name="searchName">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!--body content-->
+<div class="container-fluid">
+  <div class="row" style="padding: 10px">
+    <div class="col-5" >
+      <p>ở đây chứa content hoặc hình ảnh </p>
+    </div>
+    <div class="col-5">
+      <div>
+        <form style="width: 450px;
+        height: 450px; margin: 0 auto">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Username / Tên" aria-label="Username"
+                   aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>
+          <div class="d-flex align-items-center-group mb-3">
+            <input class="w-100" type="date" value="dateOfBirth">
+            <span class="input-group-text">Birthday</span>
+
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="id card / Cmnd">
+            <span class="input-group-text">IdCard</span>
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="phone number">
+            <span class="input-group-text">Phone Number</span>
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username"
+                   aria-describedby="basic-addon2">
+            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+          </div>
+          <div class="input-group mb-3">
+            <div class="form-check" style="padding-right: 10px ">
+              Nam
+              <input class="form-check-input" type="radio" name="flexRadioDefault">
+            </div>
+            <div class="form-check" style="padding-right: 10px ">
+              Nữ
+              <input class="form-check-input" type="radio" name="flexRadioDefault"  checked>
+            </div>
+            <div class="form-check" style="padding-right: 5px ">
+             LGBT
+            <input class="form-check-input" type="radio" name="flexRadioDefault"  checked>
+          </div>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" placeholder="address / Địa chỉ">
+          </div>
+          <div class="input-group mb-3">
+            <select >
+              <option>member</option>
+              <option>gold</option>
+              <option>VIP</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-secondary">Close</button>
+          <button type="reset" class="btn btn-primary">Save changes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--</footer>-->
+<div class="footer" style="background-color: cadetblue">
+  <div class="col-lg-">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-light">
+          <h2 class="mb-1">Hướng Dẫn Di Chuyển</h2>
+          <div class="d-flex flex-column flex-md-row flex-lg-column">
+            <p>Khu nghỉ dưỡng Furama là cơ sở hàng đầu để khám phá một trong những điểm đến hấp dẫn nhất Châu Á. Chỉ cách Đà Nẵng một quãng lái xe ngắn là bốn Di sản Văn hóa Thế giới được UNESCO công nhận:</p>
+            <p class="pl-0 pl-md-3 pl-lg-0"><a href="#" class="btn btn-primary btn-with-arrow js-footer-map-toggle"><i class="icon-placeholder"></i><span class="opened-text">Đóng Bản Đồ</span><span>Xem Trên Bản Đồ</span></a></p>
+          </div>
+          <div class="mt-3 mt-md-1 mt-lg-3"></div>
+        </div>
+        <div class="col-lg-7 ml-lg-auto d-flex flex-column position-static">
+          <div class="row">
+            <div class="col-sm col-lg-5">
+              <div class="col-sm mt-2 mt-sm-0">
+                <h4>
+                  Liên hệ                            </h4>
+                <ul class="icn-list">
+                  <li> <i class="icon-placeholder"></i><span style="color: #707070;font-size: 12px">103 - 105 Vo Nguyen Giap Street, Khue My Ward, Ngu Hanh Son District, Danang City, Vietnam</span><br style="margin: 0px;padding: 0px;color: #707070;font-size: 12px"><span style="color: #707070;font-size: 12px">Tel.: 84-236-3847 333/888 *
+</span><span style="color: #707070;font-size: 12px">Fax: 84-236-3847 666</span><br style="margin: 0px;padding: 0px;color: #707070;font-size: 12px"><span style="color: #707070;font-size: 12px">Email:&nbsp;</span><a class="link" style="margin: 0px;padding: 0px;color: #707070;font-size: 12px" href="mailto:reservation@furamavietnam.com">reservation@furamavietnam.com</a><span style="color: #707070;font-size: 12px">&nbsp;*&nbsp;</span><a class="link" style="margin: 0px;padding: 0px;color: #707070;font-size: 12px" href="https://www.furamavietnam.com/undefined/">www.furamavietnam.com</a>
+
+                    <span style="color: #707070;font-size: 12px">GDS Codes: Amadeus-GD DADFUR, Galileo/Apollo-GD 16236, Sabre-GD 032771, Worldspan- GD DADFU</span>
+
+                    <hr>
+
+                    <a href="https://www.facebook.com/furamaresort/" target="_blank" rel="noopener"><img style="width: 32px;height: 32px;float: left" src="https://furamavietnam.com/wp-content/uploads/2019/06/incon-Facbook-1.png" alt="" width="32" height="32"></a><a href="https://www.instagram.com/furama_resort_danang/?hl=vi" target="_blank" rel="noopener"><img style="width: 40px;height: 32px;float: left" src="https://furamavietnam.com/wp-content/uploads/2019/06/social-ins.png" alt="" width="40" height="32"></a><a href="https://www.youtube.com/user/furamaresortvietnam/featured" target="_blank" rel="noopener"><img style="width: 40px;height: 32px;float: left" src="https://furamavietnam.com/wp-content/uploads/2021/10/social-youtube.png" alt="" width="40" height="32"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row mt-5 mb-1 mt-lg-auto mb-md-0 align-items-center">
+              <div class="col-sm-auto col-lg-12 col-xl-auto">
+                <div class="footer-copyright text-left">
+                  <img src="https://furamavietnam.com/wp-content/uploads/2019/02/Ariyana-Tourism-Complex-02-2.png" alt="Ariyana Tourism Complex" width="500px;">
+                  <div class="clearfix d-md-none">
+                  </div>© 2018 Furama Resort</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

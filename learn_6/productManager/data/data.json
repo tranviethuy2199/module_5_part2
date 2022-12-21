@@ -1,0 +1,88 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Iphone promax",
+      "price": 1000,
+      "description": "Bán chạy"
+    },
+    {
+      "id": 2,
+      "name": "Iphone",
+      "price": 1000,
+      "description": "tồn kho"
+    },
+    {
+      "id": 3,
+      "name": "Iphone",
+      "price": 1000,
+      "description": "tồn kho"
+    },
+    {
+      "id": 4,
+      "name": "Iphone",
+      "price": 1000,
+      "description": "tồn kho"
+    },
+    {
+      "id": 5,
+      "name": "Iphone",
+      "price": 1000,
+      "description": "tồn kho"
+    },
+    {
+      "id": 6,
+      "name": "a quang",
+      "price": 1000,
+      "description": "tồn kho"
+    },
+    {
+      "id": 7,
+      "name": "Iphone",
+      "price": 1000,
+      "description": "tồn kho"
+    },
+    {
+      "id": 8,
+      "name": "Iphone",
+      "price": 1000,
+      "description": "tồn kho"
+    },
+    {
+      "id": 9,
+      "name": "Iphone",
+      "price": 1000,
+      "description": "tồn kho"
+    },
+    {
+      "id": 10,
+      "name": "Iphone",
+      "price": 1000,
+      "description": "tồn kho"
+    },
+    {
+      "name": "nokia",
+      "price": 500,
+      "description": "Bán chạy",
+      "id": 11
+    },
+    {
+      "name": "a sáng",
+      "price": 2000,
+      "description": "coder",
+      "id": 12
+    },
+    {
+      "name": "sáng đẹp trai",
+      "price": 2000,
+      "description": "coder",
+      "id": 13
+    },
+    {
+      "name": "a sáng",
+      "price": 20000,
+      "description": "áhdgv",
+      "id": 14
+    }
+  ]
+}
